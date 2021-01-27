@@ -1,15 +1,15 @@
 def divisibleDesde1a10():
-	numeros=list(range(1,100000000))
-	multiplos=list(range(1,21))
-	interes=[]
-	for i in numeros:
-		contador=0
-		for n in multiplos:
-			if i%n==0:
-				contador+=1
-		if contador==20:
-			interes.append(i)
-			print(interes)
+	found=False
+	i=20
+	while found==False:
+		c=0
+		for x in range(1,21):
+			if i%x==0:
+				c+=1
+		if c==20:
+			print(i)
+			found= True
+		i+=1
 			
 			
 		
